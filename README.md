@@ -2,6 +2,8 @@
 
 A full-stack Netflix-style movie web application with user authentication, MySQL database integration, and TMDB movie data. Built with React, Node.js, Express, and MySQL.
 
+current version is modified into such a way that it can be easily deployed using vercel.
+
 ![Netflix Clone](https://img.shields.io/badge/Netflix-Clone-red) ![React](https://img.shields.io/badge/React-18.3-blue) ![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![MySQL](https://img.shields.io/badge/MySQL-Aiven-orange)
 
 ## 🚀 Quick Start
