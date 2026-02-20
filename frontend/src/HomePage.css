@@ -1,0 +1,27 @@
+.home-root {
+  min-height: 100vh;
+  background-color: #141414;
+  color: #fff;
+}
+
+.home-main {
+  margin-top: -6rem;
+  padding-top: 6rem;
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(20, 20, 20, 0.9) 40%,
+    transparent 100%
+  );
+}
+
+.home-status,
+.home-error {
+  padding: 2rem 3%;
+  font-size: 1rem;
+}
+
+.home-error {
+  color: #ffa2a2;
+}
+
