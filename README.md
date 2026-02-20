@@ -1,13 +1,77 @@
-# Netflix-style Movie Web Application
+# Netflix Clone 🎬
 
-This is a full-stack Netflix-style movie web application with user registration, login, MySQL database integration, TMDB movie data, and a modern responsive UI.
+A full-stack Netflix-style movie web application with user authentication, MySQL database integration, and TMDB movie data. Built with React, Node.js, Express, and MySQL.
+
+![Netflix Clone](https://img.shields.io/badge/Netflix-Clone-red) ![React](https://img.shields.io/badge/React-18.3-blue) ![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![MySQL](https://img.shields.io/badge/MySQL-Aiven-orange)
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- **Node.js 18+** and **npm**
+- **TMDB API Key** (free) - [Get it here](https://www.themoviedb.org/settings/api)
+- **Aiven MySQL** (free) - [Sign up here](https://console.aiven.io/signup)
+
+### Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/netflixclone.git
+   cd netflixclone
+   ```
+
+2. **Follow the detailed setup guide**
+   - See **[SETUP.md](SETUP.md)** for step-by-step instructions to get TMDB API key and Aiven MySQL credentials
+
+3. **Configure environment variables**
+   ```bash
+   # Backend
+   cd backend
+   copy .env.example .env
+   # Edit backend/.env with your TMDB API key and Aiven MySQL credentials
+   
+   # Frontend
+   cd ../frontend
+   copy .env.example .env
+   # Edit frontend/.env (VITE_API_BASE_URL should be http://localhost:5000)
+   ```
+
+4. **Install dependencies**
+   ```bash
+   # Backend
+   cd backend
+   npm install
+   
+   # Frontend
+   cd ../frontend
+   npm install
+   ```
+
+5. **Run the application**
+   ```bash
+   # Terminal 1 - Backend (port 5000)
+   cd backend
+   npm run dev
+   
+   # Terminal 2 - Frontend (port 5173)
+   cd frontend
+   npm run dev
+   ```
+
+6. **Open your browser**
+   - Navigate to **http://localhost:5173**
+   - Register a new account → Login → Enjoy the Netflix-style movie experience!
+
+---
+
+## 📋 Project Structure
 
 The project is split into two parts:
 
 - **backend**: Node.js/Express REST API with MySQL, bcrypt password hashing, and TMDB proxy.
 - **frontend**: React (Vite) single-page app with routes for `/login`, `/register`, and `/home`.
 
-> Passwords are **never** stored in plain text and all secrets are configured via environment variables.
+> 🔒 **Security**: Passwords are **never** stored in plain text and all secrets are configured via environment variables.
 
 ---
 
