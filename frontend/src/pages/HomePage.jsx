@@ -5,7 +5,7 @@ import Hero from "../components/Hero.jsx";
 import MovieRow from "../components/MovieRow.jsx";
 import "../HomePage.css";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "";
 
 export default function HomePage() {
   const [trending, setTrending] = useState([]);
